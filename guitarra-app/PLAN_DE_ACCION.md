@@ -26,7 +26,9 @@ Esta es la evolución más importante de la funcionalidad principal. Pasamos de 
 *   **Objetivo:** Mostrar la letra de la canción y colocar el nombre del acorde (`Dm`, `C`, etc.) justo encima de la sílaba donde se debe tocar.
 *   **Pasos Clave:**
     1.  **Modificar la Estructura de Datos:** Actualizar `src/data/chords.js` para que, en lugar de acordes aislados, tengamos una estructura de "canción" que contenga la letra y los acordes asociados a cada línea.
-    2.  **Crear un Componente `LyricsViewer`:** Desarrollar un nuevo componente en React que reciba los datos de la canción y renderice la letra con los acordes posicionados correctamente encima.
+       *   **Sugerencia:** Para facilitar el renderizado, se puede modelar cada línea como un array de objetos "segmento", donde cada segmento tiene texto y un acorde opcional. `[{ chord: 'G', text: 'Hello ' }, { chord: 'C', text: 'World' }]`.
+    2.  **Crear un Componente `LyricsViewer`:** Desarrollar un nuevo componente en React que reciba la estructura de datos de la canción y la renderice.
+       *   Este componente iterará sobre las líneas y los segmentos, posicionando el acorde sobre el texto correspondiente.
     3.  **Integración:** Reemplazar o complementar la vista actual con este nuevo visor de letras.
 
 ---
