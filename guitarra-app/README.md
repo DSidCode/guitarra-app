@@ -16,6 +16,19 @@ Una aplicación web interactiva diseñada para ayudar a los guitarristas a apren
 -   **Estilos:** [Tailwind CSS](https://tailwindcss.com/)
 -   **Iconos:** [Lucide React](https://lucide.dev/)
 
+## 🚀 Hoja de Ruta (Próximas Funcionalidades)
+
+Este proyecto está en constante evolución. El *hack* inicial para "céro" es solo el comienzo. Estas son las próximas misiones en nuestro mapa del tesoro:
+
+1.  **Visor de Canciones Completas:** Implementar un sistema para mostrar letras de canciones completas con los acordes sincronizados sobre cada sílaba.
+2.  **Buscador de Canciones:** Añadir una barra de búsqueda para encontrar cualquier canción en nuestra creciente base de datos.
+3.  **Identificador de Acordes Inverso (El "Shazam" de los Acordes):** Una herramienta revolucionaria donde podrás marcar las notas en el diapasón y la app te dirá qué acorde estás tocando. ¡Una sugerencia brillante de la comunidad!
+4.  **Generador de Acordes con IA:** La misión final. Integrar una IA para que puedas buscar cualquier canción del mundo y obtener su letra y acordes al instante, listos para tocar.
+
+> Puedes seguir el progreso detallado en nuestro [PLAN_DE_ACCION.md](./PLAN_DE_ACCION.md).
+
+---
+
 ## 📂 Estructura del Proyecto
 
 El proyecto está organizado para ser escalable y fácil de mantener:

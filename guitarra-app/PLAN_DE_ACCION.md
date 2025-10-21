@@ -45,7 +45,24 @@ Una vez que tengamos la capacidad de mostrar una canción completa, el siguiente
 
 ---
 
-### Tarea 4: Integración con IA para Generación de Canciones (El Gran Salto)
+### Tarea 4: Identificador de Acordes Inverso (Sugerencia del Músico)
+
+Esta es una herramienta creativa fundamental. Permite al usuario descubrir el nombre de un acorde simplemente marcando las notas en el diapasón.
+
+*   **Objetivo:** Crear una herramienta donde el usuario pueda seleccionar notas en un diapasón virtual y la aplicación identifique y muestre el nombre del acorde correspondiente (ej: "Fa menor 7", "La sus4").
+*   **Valor para el usuario:** Resuelve un problema real para músicos que crean sus propias progresiones o aprenden acordes de oído y necesitan saber su nombre teórico y sus extensiones para escribirlos o comunicarlos.
+*   **Pasos Clave:**
+    1.  **Diapasón Interactivo:** Modificar el componente `Fretboard` (o crear una versión) para que sea "clicable", permitiendo al usuario seleccionar y deseleccionar notas en cada cuerda y traste.
+    2.  **Motor de Teoría Musical:** Investigar e integrar una librería de teoría musical para JavaScript (como `tonal.js` o `teoria.js`). Estas librerías son capaces de recibir un array de notas y devolver los posibles acordes que forman.
+    3.  **Lógica de Identificación:**
+        *   Capturar las notas seleccionadas por el usuario en el diapasón.
+        *   Pasar el array de notas a la librería de teoría musical.
+        *   Recibir y procesar la respuesta (que puede ser una lista de posibles nombres de acordes).
+    4.  **Interfaz de Resultados:** Mostrar el nombre del acorde identificado (o la lista de posibilidades) de una forma clara y útil para el usuario.
+
+---
+
+### Tarea 5: Integración con IA para Generación de Canciones (El Gran Salto)
 
 Esta es la funcionalidad más avanzada y compleja, un verdadero "game-changer".
 
