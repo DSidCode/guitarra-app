@@ -1,31 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
-    <linearGradient id="guitarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ff4500" />
-      <stop offset="50%" stop-color="#ff8c00" />
-      <stop offset="100%" stop-color="#ffd700" />
+    <!-- Fondo Gradiente Luxury -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0e1322" />
+      <stop offset="100%" stop-color="#05070d" />
+    </radialGradient>
+    
+    <!-- Gradiente Neón Dorado -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe600" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+
+    <!-- Gradiente Neón Cian -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f3ff" />
+      <stop offset="100%" stop-color="#0066ff" />
+    </linearGradient>
+    
+    <!-- Glow Effect High-End -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
   </defs>
-  <!-- Background Badge -->
-  <rect width="64" height="64" rx="16" fill="#0f172a" />
-  
-  <!-- Guitar Silhouette -->
-  <path d="M 44 10 C 42 8 38 8 36 10 L 30 18 L 26 22 C 22 20 16 22 14 26 C 12 30 14 36 18 38 C 14 42 12 48 16 52 C 20 56 26 54 30 50 C 34 54 40 56 44 52 C 48 48 46 42 42 38 C 46 36 48 30 46 26 C 44 22 38 20 34 22 L 38 18 Z" fill="url(#guitarGrad)" filter="url(#glow)" />
-  
-  <!-- Sound Hole -->
-  <circle cx="28" cy="38" r="4" fill="#0f172a" stroke="#ffd700" stroke-width="1.5" />
-  
-  <!-- Guitar Neck & Head -->
-  <line x1="28" y1="38" x2="48" y2="12" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
-  
-  <!-- Strings -->
-  <line x1="26" y1="36" x2="46" y2="10" stroke="#ffd700" stroke-width="0.8" />
-  <line x1="30" y1="40" x2="50" y2="14" stroke="#ffd700" stroke-width="0.8" />
+
+  <!-- Marco de Tarjeta Cyberpunk Luxury -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="8" />
+
+  <!-- Púa de Guitarra Cyberpunk Neón -->
+  <path d="M 256 64 C 360 64 432 140 380 280 L 276 432 C 266 448 246 448 236 432 L 132 280 C 80 140 152 64 256 64 Z" 
+        fill="#080c18" stroke="url(#goldGrad)" stroke-width="12" filter="url(#neonGlow)" />
+
+  <!-- Cuerpo de Guitarra Estilizado Minimalista -->
+  <path d="M 220 180 C 260 140 310 170 310 210 C 310 240 280 260 290 300 C 300 340 330 350 310 380 C 290 410 230 400 210 370 C 190 340 210 310 200 270 C 190 230 180 220 220 180 Z" 
+        fill="none" stroke="url(#cyanGrad)" stroke-width="14" stroke-linecap="round" filter="url(#neonGlow)" />
+
+  <!-- Boca de la Guitarra (Ojo Neón Dorado) -->
+  <circle cx="256" cy="275" r="28" fill="#05070d" stroke="url(#goldGrad)" stroke-width="10" filter="url(#neonGlow)" />
+  <circle cx="256" cy="275" r="10" fill="#00f3ff" />
+
+  <!-- Mástil y Trastes en Diagonal Cyberpunk -->
+  <line x1="256" y1="275" x2="360" y2="120" stroke="#ffffff" stroke-width="14" stroke-linecap="round" />
+
+  <!-- Cuerdas Neón Celestes/Doradas -->
+  <line x1="244" y1="265" x2="348" y2="110" stroke="#00f3ff" stroke-width="4" />
+  <line x1="256" y1="275" x2="360" y2="120" stroke="#ffe600" stroke-width="4" />
+  <line x1="268" y1="285" x2="372" y2="130" stroke="#00f3ff" stroke-width="4" />
+
+  <!-- Destello Estelar -->
+  <circle cx="360" cy="120" r="12" fill="#ffe600" filter="url(#neonGlow)" />
 </svg>
