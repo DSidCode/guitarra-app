@@ -5,6 +5,17 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2026-08-17
+
+### Added & Redesigned
+- **Estética Cyberpunk Luxury:** Rediseño completo con paleta de neón cian/dorado/esmeralda, gradientes y paneles en vidrio esmerilado (*glassmorphism*).
+- **Hub de Contacto Directo:**
+  - 💬 **WhatsApp Directo (641868620):** Enlace directo `https://wa.me/34641868620` estilizado con botón verde esmeralda reluciente.
+  - 🐙 **GitHub (DSidCode):** Enlace directo al perfil personal de desarrollo.
+  - 💼 **LinkedIn (DaniSid):** Enlace directo profesional.
+  - 🏰 **Maison Quintessence Studio:** Enlace directo a la agencia boutique B2B (`quintessence.studio`).
+  - 💛 **La Gorra Digital:** Botón de apoyo al desarrollo independiente.
+
 ## [1.2.0] - 2026-08-17
 
 ### Added
