@@ -1,20 +1,26 @@
-# 🎸 Guitarra App - Tutorial Interactivo
+# 🎸 Cancionero Pro (Guitar App) - Cyberpunk Luxury Edition v1.4.0
 
-Una aplicación web interactiva diseñada para ayudar a los guitarristas a aprender y practicar la progresión de acordes **Dm - C - F - Bb**, utilizada en la canción "céro" de LADY MADRIZZZ.
+Una aplicación web interactiva de alto rendimiento con estética **Cyberpunk Luxury**, diseñada para guitarristas y cantantes. Incluye repertorio de canciones sincronizadas, diccionario de acordes con digitación en diapasón, módulo de **Transposición Vocal** en tiempo real y Hub de Contacto Directo B2B.
 
-## ✨ Características
+## ✨ Características Principales
 
--   **Visualizador de Acordes:** Muestra claramente la posición de los dedos en el diapasón para cada acorde.
--   **Guía de Digitación:** Números en los puntos indican qué dedo usar (1=Índice, 4=Meñique).
--   **Tablatura de Arpegio:** Proporciona un patrón de arpegio sugerido para cada acorde.
--   **Navegación Interactiva:** Cambia fácilmente entre los acordes de la progresión con los botones "Anterior" y "Siguiente".
--   **Diseño Responsivo:** Adaptado para funcionar tanto en escritorio como en dispositivos móviles.
+- 🎨 **Estética Cyberpunk Luxury:** Interfaz en obsidiana profundo, detalles en neón cian/dorado/esmeralda, paneles *glassmorphism* y efectos de iluminación volumétrica.
+- 🎼 **Módulo de Transposición Vocal (Vocal Transposer):** Adapta cualquier progresión de acordes en semitonos (rango de `-5` a `+5`) en tiempo real para ajustar la tonalidad al rango vocal del cantante.
+- 🎸 **Visualizador de Acordes y Digitación:** Muestra la posición de los dedos en el diapasón para cada acorde en el diccionario.
+- 📱 **Hub de Contacto Directo B2B:**
+  - 💬 **WhatsApp Directo (641 86 86 20):** Enlace directo `https://wa.me/34641868620`.
+  - 🐙 **GitHub:** Profile personal (`DSidCode`).
+  - 💼 **LinkedIn:** `danisidcode`.
+  - 🏰 **Maison Quintessence Studio:** Enlace directo a la agencia boutique.
+- 🌟 **Favicon Cyberpunk 3D Masterpiece:** Renderizado 3D de alta definición en PNG transparente.
+- 🎵 **Repertorio Ampliado de Canciones:** Cancionero interactivo sincronizado.
 
 ## 🛠️ Tecnologías Utilizadas
 
--   **Frontend:** [React](https://react.dev/) (con Vite)
--   **Estilos:** [Tailwind CSS](https://tailwindcss.com/)
--   **Iconos:** [Lucide React](https://lucide.dev/)
+- **Frontend:** [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Estilos:** [Tailwind CSS](https://tailwindcss.com/)
+- **Iconografía:** [Lucide React](https://lucide.dev/)
+- **Despliegue:** Netlify / GitHub Pages (`guitarra.danisid.com`)
 
 ## 🚀 Hoja de Ruta (Próximas Funcionalidades)
 
