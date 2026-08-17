@@ -107,11 +107,11 @@ const App = () => {
 
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/garciadanielsid/"
+            href="https://www.linkedin.com/in/danisidcode/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-3 py-1.5 bg-blue-950/80 hover:bg-blue-900 border border-blue-500/50 text-blue-300 hover:text-white rounded-full text-xs font-semibold transition-all hover:scale-105"
-            title="LinkedIn (DaniSid)"
+            title="LinkedIn (danisidcode)"
           >
             <Linkedin className="w-4 h-4 text-blue-400" />
             <span>LinkedIn</span>
@@ -119,11 +119,11 @@ const App = () => {
 
           {/* Maison Quintessence */}
           <a
-            href="https://quintessence.studio"
+            href="https://maison-quintessence.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-amber-950/80 to-yellow-950/80 hover:from-amber-900 hover:to-yellow-900 border border-amber-500/50 text-amber-300 rounded-full text-xs font-semibold transition-all hover:scale-105 shadow-[0_0_10px_rgba(245,158,11,0.2)]"
-            title="Maison Quintessence IT Boutique"
+            title="Maison Quintessence Studio"
           >
             <Globe className="w-4 h-4 text-amber-400" />
             <span>Quintessence</span>
@@ -318,7 +318,7 @@ const App = () => {
           </a>
           <span>•</span>
           <a
-            href="https://www.linkedin.com/in/garciadanielsid/"
+            href="https://www.linkedin.com/in/danisidcode/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-all font-bold"
@@ -327,7 +327,7 @@ const App = () => {
           </a>
           <span>•</span>
           <a
-            href="https://quintessence.studio"
+            href="https://maison-quintessence.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 text-amber-400 hover:text-amber-300 transition-all font-bold"
