@@ -1,29 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
-    <!-- Fondo circular / squircle elegante en negro brillante -->
-    <radialGradient id="bgGlow" cx="50%" cy="50%" r="75%">
-      <stop offset="0%" stop-color="#1e1b4b" />
-      <stop offset="60%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#020617" />
+    <!-- Dark Luxury Obsidian Background Gradient -->
+    <radialGradient id="bgObsidian" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="50%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#030712" />
     </radialGradient>
 
-    <!-- Gradiente de Oro Líquido Cyberpunk -->
-    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fef08a" />
-      <stop offset="30%" stop-color="#facc15" />
-      <stop offset="70%" stop-color="#eab308" />
-      <stop offset="100%" stop-color="#ca8a04" />
+    <!-- Liquid Gold Metallic Gradient -->
+    <linearGradient id="goldMetallic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff59d" />
+      <stop offset="25%" stop-color="#fbc02d" />
+      <stop offset="50%" stop-color="#f57f17" />
+      <stop offset="75%" stop-color="#fbc02d" />
+      <stop offset="100%" stop-color="#fff176" />
     </linearGradient>
 
-    <!-- Gradiente de Neón Cian -->
-    <linearGradient id="cyanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#22d3ee" />
-      <stop offset="100%" stop-color="#0284c7" />
+    <!-- Neon Cyan Metallic Gradient -->
+    <linearGradient id="cyanNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0e7490" />
     </linearGradient>
 
-    <!-- Sombra/Glow Neón sutil -->
-    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
+    <!-- Guitar Body Deep Shader -->
+    <linearGradient id="bodyShader" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- High Precision Glow Filters -->
+    <filter id="goldGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="cyanGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -31,61 +47,78 @@
     </filter>
   </defs>
 
-  <!-- Marco Squircle Premium -->
-  <rect width="512" height="512" rx="120" fill="url(#bgGlow)" stroke="url(#goldGradient)" stroke-width="6" />
+  <!-- Base Squircle Container (App Icon standard) -->
+  <rect width="512" height="512" rx="115" fill="url(#bgObsidian)" stroke="url(#goldMetallic)" stroke-width="5" />
 
-  <!-- Anillo Neón Exterior -->
-  <circle cx="256" cy="256" r="220" fill="none" stroke="url(#cyanGradient)" stroke-width="2" opacity="0.3" />
+  <!-- Outer Neon Pulse Rings (Music Waves) -->
+  <circle cx="256" cy="256" r="215" fill="none" stroke="url(#cyanNeon)" stroke-width="1.5" opacity="0.25" stroke-dasharray="8 8" />
+  <circle cx="256" cy="256" r="185" fill="none" stroke="url(#goldMetallic)" stroke-width="1" opacity="0.2" />
 
-  <!-- SILUETA DE GUITARRA ACÚSTICA ELEGANTE Y RECONOCIBLE -->
-  <g transform="rotate(-35, 256, 256)" filter="url(#softGlow)">
-    
-    <!-- Mástil -->
-    <rect x="246" y="70" width="20" height="220" fill="url(#goldGradient)" rx="4" />
-    
-    <!-- Clavijero (Headstock) -->
-    <path d="M 238 70 L 238 35 C 238 28 274 28 274 35 L 274 70 Z" fill="url(#goldGradient)" />
-    <!-- Clavijas -->
-    <circle cx="230" cy="45" r="5" fill="#fef08a" />
-    <circle cx="230" cy="58" r="5" fill="#fef08a" />
-    <circle cx="282" cy="45" r="5" fill="#fef08a" />
-    <circle cx="282" cy="58" r="5" fill="#fef08a" />
+  <!-- GUITAR GROUP - ROTATED 45 DEGREES FOR DYNAMIC ELEGANCE -->
+  <g transform="rotate(-45, 256, 256)">
 
-    <!-- Trastes -->
-    <line x1="246" y1="95" x2="266" y2="95" stroke="#0f172a" stroke-width="2" />
-    <line x1="246" y1="120" x2="266" y2="120" stroke="#0f172a" stroke-width="2" />
-    <line x1="246" y1="150" x2="266" y2="150" stroke="#0f172a" stroke-width="2" />
-    <line x1="246" y1="180" x2="266" y2="180" stroke="#0f172a" stroke-width="2" />
-    <line x1="246" y1="210" x2="266" y2="210" stroke="#0f172a" stroke-width="2" />
+    <!-- Shadow Layer -->
+    <ellipse cx="256" cy="340" rx="90" ry="110" fill="#000000" opacity="0.6" filter="url(#goldGlow)" />
 
-    <!-- Cuerpo de Guitarra Acústica (Curves Simétricas Elegantes) -->
+    <!-- GUITAR BODY -->
     <path d="
-      M 256 240
-      C 210 240 185 260 185 295
-      C 185 320 205 335 195 365
-      C 180 405 200 455 256 455
-      C 312 455 332 405 317 365
-      C 307 335 327 320 327 295
-      C 327 260 302 240 256 240 Z" 
-      fill="#090d16" 
-      stroke="url(#goldGradient)" 
-      stroke-width="12" />
+      M 256, 190
+      C 215, 190 180, 215 180, 250
+      C 180, 275 200, 290 190, 320
+      C 175, 360 195 420 256 420
+      C 317, 420 337, 360 322, 320
+      C 312, 290 332, 275 332, 250
+      C 332, 215 297, 190 256, 190 Z"
+      fill="url(#bodyShader)"
+      stroke="url(#goldMetallic)"
+      stroke-width="9"
+      filter="url(#goldGlow)"
+    />
 
-    <!-- Rosetón / Boca Acústica -->
-    <circle cx="256" cy="310" r="32" fill="#020617" stroke="url(#cyanGradient)" stroke-width="6" />
-    <circle cx="256" cy="310" r="22" fill="none" stroke="url(#goldGradient)" stroke-width="2" />
-
-    <!-- Puente -->
-    <rect x="226" y="400" width="60" height="16" rx="6" fill="url(#goldGradient)" />
+    <!-- GUITAR NECK -->
+    <rect x="246" y="35" width="20" height="160" fill="url(#bodyShader)" stroke="url(#goldMetallic)" stroke-width="4" />
     
-    <!-- Cuerdas Blancas Neón -->
-    <line x1="249" y1="40" x2="249" y2="400" stroke="#ffffff" stroke-width="1.5" opacity="0.9" />
-    <line x1="252" y1="40" x2="252" y2="400" stroke="#fef08a" stroke-width="1.5" opacity="0.9" />
-    <line x1="255" y1="40" x2="255" y2="400" stroke="#ffffff" stroke-width="1.5" opacity="0.9" />
-    <line x1="258" y1="40" x2="258" y2="400" stroke="#22d3ee" stroke-width="1.5" opacity="0.9" />
-    <line x1="261" y1="40" x2="261" y2="400" stroke="#ffffff" stroke-width="1.5" opacity="0.9" />
+    <!-- FRET WIRES -->
+    <line x1="246" y1="65" x2="266" y2="65" stroke="url(#goldMetallic)" stroke-width="2.5" />
+    <line x1="246" y1="90" x2="266" y2="90" stroke="url(#goldMetallic)" stroke-width="2.5" />
+    <line x1="246" y1="115" x2="266" y2="115" stroke="url(#goldMetallic)" stroke-width="2.5" />
+    <line x1="246" y1="140" x2="266" y2="140" stroke="url(#goldMetallic)" stroke-width="2.5" />
+    <line x1="246" y1="165" x2="266" y2="165" stroke="url(#goldMetallic)" stroke-width="2.5" />
 
-    <!-- Destello de Luz Neón en la Boca -->
-    <circle cx="256" cy="310" r="8" fill="#22d3ee" />
+    <!-- HEADSTOCK (CLAVIJERO) -->
+    <path d="M 240, 35 L 240, 0 C 240, -10 272, -10 272, 0 L 272, 35 Z" fill="url(#bodyShader)" stroke="url(#goldMetallic)" stroke-width="4" />
+    
+    <!-- TUNING PEGS (CLAVIJAS GOLD) -->
+    <circle cx="230" cy="10" r="6" fill="url(#goldMetallic)" />
+    <circle cx="230" cy="24" r="6" fill="url(#goldMetallic)" />
+    <circle cx="282" cy="10" r="6" fill="url(#goldMetallic)" />
+    <circle cx="282" cy="24" r="6" fill="url(#goldMetallic)" />
+
+    <!-- SOUNDHOLE & ROSETTE -->
+    <circle cx="256" cy="260" r="34" fill="#030712" stroke="url(#cyanNeon)" stroke-width="5" filter="url(#cyanGlow)" />
+    <circle cx="256" cy="260" r="26" fill="none" stroke="url(#goldMetallic)" stroke-width="2" />
+    <circle cx="256" cy="260" r="12" fill="#06b6d4" opacity="0.9" />
+
+    <!-- BRIDGE -->
+    <rect x="226" y="370" width="60" height="14" rx="4" fill="url(#bodyShader)" stroke="url(#goldMetallic)" stroke-width="3" />
+    <circle cx="236" cy="377" r="2" fill="url(#goldMetallic)" />
+    <circle cx="244" cy="377" r="2" fill="url(#goldMetallic)" />
+    <circle cx="252" cy="377" r="2" fill="url(#goldMetallic)" />
+    <circle cx="260" cy="377" r="2" fill="url(#goldMetallic)" />
+    <circle cx="268" cy="377" r="2" fill="url(#goldMetallic)" />
+    <circle cx="276" cy="377" r="2" fill="url(#goldMetallic)" />
+
+    <!-- STRINGS -->
+    <line x1="248" y1="-2" x2="248" y2="370" stroke="#ffffff" stroke-width="1.2" opacity="0.95" />
+    <line x1="251" y1="-2" x2="251" y2="370" stroke="url(#goldMetallic)" stroke-width="1.2" />
+    <line x1="254" y1="-2" x2="254" y2="370" stroke="#ffffff" stroke-width="1.2" opacity="0.95" />
+    <line x1="258" y1="-2" x2="258" y2="370" stroke="url(#cyanNeon)" stroke-width="1.2" />
+    <line x1="261" y1="-2" x2="261" y2="370" stroke="#ffffff" stroke-width="1.2" opacity="0.95" />
+    <line x1="264" y1="-2" x2="264" y2="370" stroke="url(#goldMetallic)" stroke-width="1.2" />
+
+    <!-- PICK FLOTANTE -->
+    <path d="M 380, 140 C 410, 140 430, 160 415, 205 L 390, 240 C 385, 246 375, 246 370, 240 L 345, 205 C 330, 160 350, 140 380, 140 Z"
+          fill="url(#bodyShader)" stroke="url(#goldMetallic)" stroke-width="4" opacity="0.85" filter="url(#goldGlow)" />
+    <circle cx="380" cy="180" r="10" fill="none" stroke="url(#cyanNeon)" stroke-width="2" />
   </g>
 </svg>
