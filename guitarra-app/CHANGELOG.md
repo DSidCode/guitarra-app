@@ -5,6 +5,17 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2026-08-17
+
+### Added & Refined
+- **Favicon Cyberpunk Luxury 3D (Masterpiece Asset):**
+  - Renderizado 3D de alta definición en PNG transparente (`public/guitar.png`) procesado mediante IA (Nano-Banana).
+  - Eliminación completa de marcos metálicos conservando el aura de luz neón cian/dorada volumétrica y la cabeza de la guitarra con clavijero intacto.
+  - Copia de resguardo completa guardada en `public/cyberpunk_guitar_badge.png`.
+- **Actualización de Enlaces Directos:**
+  - 💼 **LinkedIn:** Actualizado a `https://www.linkedin.com/in/danisidcode/`.
+  - 🏰 **Maison Quintessence Studio:** Actualizado a `https://maison-quintessence.netlify.app/`.
+
 ## [1.3.0] - 2026-08-17
 
 ### Added & Redesigned
