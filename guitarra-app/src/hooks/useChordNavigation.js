@@ -12,5 +12,5 @@ export const useChordNavigation = (totalItems) => {
     setCurrentIndex((prev) => (prev - 1 + totalItems) % totalItems);
   }, [totalItems]);
 
-  return { currentIndex, next, prev };
+  return { currentIndex, setCurrentIndex, next, prev };
 };
